@@ -1,0 +1,60 @@
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Magento_Ui/js/core/app":{
+                "components":{
+                    "startSimple":{
+                        "component": "PaintingTheme_Pracjs/js/requirejs"
+                    }
+
+                }
+            }
+        }
+    }
+</script>
+<div data-bind="scope: 'startSimple'">
+    <h2 data-bind="text: title"></h2>
+</div>
+<!-- to load requirejs from phtml -->
+<!-- <script type="text/x-magento-init">
+    {
+        "*": {
+            "PaintingTheme_Pracjs/js/requirejs": {}
+        }
+    }
+</script> -->
+
+<!-- Targetting DOM
+<script type="text/x-magento-init">
+    {
+        "#target": {
+            "PaintingTheme_Pracjs/js/requirejs": {
+                "base_url": "<?= $block->escapejs($block->getBaseUrl()) ?>"
+            }
+        }
+    }
+</script> -->
+
+<!-- div -->
+<!-- <script type="text/x-magento-init">
+    {
+        "div": {
+            "PaintingTheme_Pracjs/js/requirejs": {
+                "base_url": "<?= $block->escapejs($block->getBaseUrl()) ?>"
+            }
+        }
+    }
+</script> -->
+
+<!-- <script type="text/x-magento-init">
+    {
+        "#target": {
+            "alias": {
+                "base_url": "<?= $block->escapejs($block->getBaseUrl()) ?>"
+            }
+        }
+    }
+</script>
+<pre id="target"><h1>Hi</h1></pre> -->
+
+<!-- <div id="target" data-mage-init='{"PaintingTheme_Pracjs/js/requirejs":{"base_url": "/"}}'><h1>Hi</h1></div> -->

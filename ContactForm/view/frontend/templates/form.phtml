@@ -1,0 +1,25 @@
+<div class="container">
+  <form class="form" id="my-form" action="<?php echo $block->getBaseUrl() . 'contacts/index/save'; ?>" method="POST"
+        data-mage-init='{"validation":{"rules": {"mobile": {"required":true, "minlength":10}}}}' >
+    <fieldset class="fieldset">
+    <label for="firstname">First Name</label>
+    <input type="text" id="firstname" name="firstname" placeholder="Your name.." value="">
+    <br><br>
+    <label for="lastname">Last Name</label>
+    <input type="text" id="lastname" name="lastname" placeholder="Your last name.." value="">
+    <br><br>
+    <div class="field name required">
+    <label for="mobile">Mobile No</label>
+    <input type="text" id="mobile" name="mobile" class="input-text" placeholder=" Your Mobile No " value="" required="true">
+    </div>
+    <br><br>
+    <label for="address">Address</label>
+    <input type="text" id="address" name="address" placeholder=" Your Address " value="">
+    <br><br>
+    <br>
+    </fieldset>
+    <input type="submit" class="submit" value="Submit">
+    <a href="<?=$block->getUrl('*/*/show')?>"
+               class="action primary">View Data</a>
+  </form>
+</div>
